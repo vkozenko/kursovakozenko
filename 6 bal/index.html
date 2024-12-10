@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mumair</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="description" content="Сайт портфоліо веб-дизайнера">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="modal" id="contact-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title">Зв'яжіться зі мною</h2>
+            <form class="modal-form">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" placeholder="Введіть ваш email" required>
+
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Напишіть ваше повідомлення" required></textarea>
+
+                <button type="submit" class="modal-submit-btn">Відправити</button>
+            </form>
+        </div>
+    </div>
+    <a href="#" class="back-to-top" id="BackToTop">Наверх</a>
+    <header>
+        <a href="#" class="logo"><img src="img/logo.png" alt="Logo"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Головна</a></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="projects.html">Проекти</a></li>
+                <li><a href="#">Відгуки</a></li>
+                <li><a href="#" class="modal-open-btn">Контакти</a></li>
+            </ul>
+            <div class="download-cv">
+                <a href="#" class="btn">Завантажити CV</a>
+            </div>
+        </nav>
+    </header>
+    <main class="hero-section">
+        <div class="text-content">
+            <p>Привіт я <br><span class="orange">Мухаммед Умайр</span></p>
+            <h1>UI & UX <br><span class="marg-l">Designer</span></h1>
+            <p>Я спеціалізуюся на створенні візуально привабливих дизайнів,
+                які покращують взаємодію з користувачем. З пристрастю до дизайну
+                я прагну втілити концепції в життя.</p>
+            <a href="#" class="hire-me-btn">Найняти мене</a>
+        </div>
+        <div class="profile-image">
+            <img src="img/men.png" alt="Profile Photo">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </main>
+    <section class="about-section">
+        <div class="profile-container">
+            <img src="img/men2.png" alt="Profile Photo" class="profile-photo">
+        </div>
+        <div class="about-content">
+            <h2 class="title-section">Про мене</h2>
+            <p class="subtext-section">Я досвідчений UI/UX дизайнер і люблю
+                створювати зручні дизайни, які відповідають очікуванням
+                клієнтів і покращують взаємодію з користувачем.</p>
+            <div class="skills">
+                <div class="skill">
+                    <label for="ux-skill">UX</label>
+                    <progress id="ux-skill" value="90" max="100"></progress>
+                    <span class="circle"></span>
+                </div>
+                <div class="skill">
+                    <label for="website-design-skill">Website Design</label>
+                    <progress id="website-design-skill" value="80" max="100"></progress>
+                    <span class="circle two"></span>
+                </div>
+                <div class="skill">
+                    <label for="app-design-skill">App Design</label>
+                    <progress id="app-design-skill" value="85" max="100"></progress>
+                    <span class="circle three"></span>
+                </div>
+                <div class="skill">
+                    <label for="graphic-design-skill">Graphic Design</label>
+                    <progress id="graphic-design-skill" value="75" max="100"></progress>
+                    <span class="circle four"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-section">
+        <div>
+            <h2 class="title-section">Послуги</h2>
+            <p class="services-intro">Я пропоную широкий спектр дизайнерських послуг, які
+                забезпечують бездоганну взаємодію з користувачем та ефективну візуальну
+                комунікацію.</p>
+        </div>
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon"><img src="img/vector.png" alt="UI/UX Icon"></div>
+                    <h3>UI/UX</h3>
+                    <p>Створення інтуїтивно зрозумілих і привабливих інтерфейсів користувача.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon"><img src="img/vector2.png" alt="Web Design Icon"></div>
+                    <h3>Web Design</h3>
+                    <p>Розробка адаптивних і естетично привабливих веб-сайтів,
+                        які приваблюють.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon"><img src="img/vector3.png" alt="App Design Icon"></div>
+                    <h3>App Design</h3>
+                    <p>Розробка дизайнів програм, які зосереджуються на функціональності.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon"><img src="img/vector4.png" alt="Graphic Design Icon"></div>
+                    <h3>Graphic Design</h3>
+                    <p>Створення візуально привабливих графічних елементів.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects-section">
+        <div>
+            <h2 class="title-section">Мої проекти</h2>
+            <p class="services-intro">Ознайомтеся з моїми
+                роботами, які демонструють мої навички у веб-дизайні,
+                UI/UX, дизайні програм і графічному дизайні. Кожен проект
+                створено з увагою до деталей.</p>
+        </div>
+        <div class="filter-buttons">
+            <a class="filter-btn" data-filter="all">Усі</a>
+            <a class="filter-btn" data-filter="uiux">UI/UX</a>
+            <a class="filter-btn active" data-filter="web-design">Web Design</a>
+            <a class="filter-btn" data-filter="app-design">App Design</a>
+            <a class="filter-btn" data-filter="graphic-design">Graphic Design</a>
+        </div>
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-card" data-category="web-design">
+                    <img src="img/card.png" alt="AirCalling Landing Page Design">
+                    <h3>Web Design</h3>
+                    <p class="project-title">Дизайн цільової сторінки AirCalling</p>
+                </div>
+                <div class="project-card" data-category="web-design">
+                    <img src="img/card2.png" alt="Business Landing Page Design">
+                    <h3>Web Design</h3>
+                    <p class="project-title">Бізнес дизайн цільової сторінки</p>
+                </div>
+                <div class="project-card" data-category="web-design">
+                    <img src="img/card3.png" alt="Ecom Web Page Design">
+                    <h3>Web Design</h3>
+                    <p class="project-title">Дизайн веб-сторінки Ecom</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div>
+            <h2 class="title-section">Відгуки</h2>
+            <p class="services-intro">Думки наших клієнтів надихають нас розвиватися
+                <br>та вдосконалювати наші послуги.</p>
+        </div>
+        <div class="testimonials-carousel">
+            <div class="testimonial testimonial-side">
+                <img src="img/men3.png" alt="Photo">
+                <div class="testimonial-block">
+                    <p class="testimonial-text">
+                        <span>“</span>Дуже задоволена співпрацею. Робота виконана швидко,
+                        якісно і з урахуванням всіх моїх побажань.
+                        Дякую за вашу роботу!<span>”</span>
+                    </p>
+                    <p class="testimonial-author">
+                        <strong>Пауль</strong><br>
+                        <span>CEO</span>
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial testimonial-center">
+                <img src="img/men3.png" alt="Photo">
+                <div class="testimonial-block">
+                    <p class="testimonial-text">
+                        <span>“</span>Просто неймовірний сервіс! Команда професіоналів завжди
+                        готова допомогти. Я надзвичайно задоволений результатом.<span>”</span>
+                    </p>
+                    <p class="testimonial-author">
+                        <strong>Логан</strong><br>
+                        <span>CEO</span>
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial testimonial-side">
+                <img src="img/men4.png" alt="Photo">
+                <div class="testimonial-block">
+                    <p class="testimonial-text">
+                        <span>“</span>Я працював з багатьма компаніями, але тут я відчув справжній
+                        індивідуальний підхід. Все було виконано ідеально!<span>”</span>
+                    </p>
+                    <p class="testimonial-author">
+                        <strong>Сем</strong><br>
+                        <span>CEO</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials-pagination">
+            <span class="pagination-dot"></span>
+            <span class="pagination-dot pagination-dot-active"></span>
+            <span class="pagination-dot"></span>
+            <span class="pagination-dot"></span>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div>
+            <h2 class="title-section">Давайте створювати разом</h2>
+            <p class="services-intro">
+                Ми відкриті для ваших ідей та пропозицій. Залиште свій email, і ми зв'яжемося з вами,
+                щоб обговорити вашу ідею або відповісти на будь-які запитання.
+            </p>
+        </div>
+        <form class="subscribe-form" action="#" method="POST">
+            <input type="email" class="subscribe-input" placeholder="Введіть свій email"/>
+            <button type="submit" class="subscribe-button">Надіслати</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <img src="img/logo.png" alt="Mumair">
+            <nav class="footer-nav">
+                <ul class="footer-menu">
+                    <li><a href="#" class="footer-link">Головна</a></li>
+                    <li><a href="#" class="footer-link">Про мене</a></li>
+                    <li><a href="#" class="footer-link">Послуги</a></li>
+                    <li><a href="#" class="footer-link">Проекти</a></li>
+                    <li><a href="#" class="footer-link">Відгуки</a></li>
+                    <li><a href="#" class="footer-link">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="footer-socials">
+                <a href="#" class="footer-social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 <span class="footer-brand-highlight">Mumair</span>. All Rights Reserved, Inc.</p>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

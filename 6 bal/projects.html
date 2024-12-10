@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mumair</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="description" content="Сайт портфоліо веб-дизайнера">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="modal" id="contact-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title">Зв'яжіться зі мною</h2>
+            <form class="modal-form">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" placeholder="Введіть ваш email" required>
+
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Напишіть ваше повідомлення" required></textarea>
+
+                <button type="submit" class="modal-submit-btn">Відправити</button>
+            </form>
+        </div>
+    </div>
+    <a href="#" class="back-to-top" id="BackToTop">Наверх</a>
+    <header>
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="projects.html">Проекти</a></li>
+                <li><a href="#">Відгуки</a></li>
+                <li><a href="#" class="modal-open-btn">Контакти</a></li>
+            </ul>
+            <div class="download-cv">
+                <a href="#" class="btn">Завантажити CV</a>
+            </div>
+        </nav>
+    </header>
+    <section class="projects-section">
+        <div>
+            <h2 class="title-section">Мої проекти</h2>
+            <p class="services-intro">Ознайомтеся з моїми
+                роботами, які демонструють мої навички у веб-дизайні,
+                UI/UX, дизайні програм і графічному дизайні. Кожен проект
+                створено з увагою до деталей.</p>
+        </div>
+        <div class="filter-buttons">
+            <a class="filter-btn" data-filter="all">Усі</a>
+            <a class="filter-btn" data-filter="uiux">UI/UX</a>
+            <a class="filter-btn active" data-filter="web-design">Web Design</a>
+            <a class="filter-btn" data-filter="app-design">App Design</a>
+            <a class="filter-btn" data-filter="graphic-design">Graphic Design</a>
+        </div>
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-card" data-category="web-design">
+                    <img src="img/card.png" alt="AirCalling Landing Page Design">
+                    <h3>Web Design</h3>
+                    <p class="project-title">Дизайн цільової сторінки AirCalling</p>
+                </div>
+                <div class="project-card" data-category="web-design">
+                    <img src="img/card2.png" alt="Business Landing Page Design">
+                    <h3>Web Design</h3>
+                    <p class="project-title">Бізнес дизайн цільової сторінки</p>
+                </div>
+                <div class="project-card" data-category="web-design">
+                    <img src="img/card3.png" alt="Ecom Web Page Design">
+                    <h3>Web Design</h3>
+                    <p class="project-title">Дизайн веб-сторінки Ecom</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project-specifications">
+        <h2 class="title-section">Технічні характеристики</h2>
+        <div class="specifications-list">
+            <div class="specification">
+                <h3>Дизайн цільової сторінки AirCalling</h3>
+                <ul>
+                    <li><strong>Технології:</strong> HTML5, CSS3, JavaScript</li>
+                    <li><strong>Час розробки:</strong> 2 місяці</li>
+                    <li><strong>Інструменти:</strong> Figma, Adobe XD</li>
+                    <li><strong>Кількість екранів:</strong> 3</li>
+                </ul>
+            </div>
+            <div class="specification">
+                <h3>Дизайн сайту для бізнесу</h3>
+                <ul>
+                    <li><strong>Технології:</strong> React, Node.js</li>
+                    <li><strong>Час розробки:</strong> 1,5 місяця</li>
+                    <li><strong>Інструменти:</strong> Figma, Webflow</li>
+                    <li><strong>Кількість екранів:</strong> 5</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="project-process">
+        <h2 class="title-section">Процес роботи</h2>
+        <div class="process-steps">
+            <div class="step">
+                <h3>1. Аналіз вимог</h3>
+                <p>Перший етап — це аналіз потреб клієнта та вимог до проекту. Я розробляю детальний план роботи, узгоджую всі аспекти проекту.</p>
+            </div>
+            <div class="step">
+                <h3>2. Створення прототипу</h3>
+                <p>Створюю прототипи для майбутнього інтерфейсу, враховуючи основні потреби користувачів та функціональність сайту.</p>
+            </div>
+            <div class="step">
+                <h3>3. Дизайн та розробка</h3>
+                <p>Після затвердження прототипу починаю роботу над дизайном, який відповідає сучасним стандартам та підвищує зручність користування.</p>
+            </div>
+            <div class="step">
+                <h3>4. Тестування та запуск</h3>
+                <p>Тестую проект на всіх етапах, забезпечуючи його працездатність та готовність до запуску.</p>
+            </div>
+        </div>
+    </section>
+    <section class="awards">
+        <h2 class="title-section">Нагороди та досягнення</h2>
+        <div class="awards-list">
+            <div class="award">
+                <h3>Нагорода за найкращий дизайн сайту 2023 року</h3>
+                <p>Це нагорода була вручена на конференції WebDesign Summit за відмінний дизайн інтерфейсу.</p>
+            </div>
+            <div class="award">
+                <h3>Сертифікат UI/UX Designer</h3>
+                <p>Отримано сертифікат від міжнародної школи дизайну за успішне завершення курсу UI/UX дизайн.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <img src="img/logo.png" alt="Mumair">
+            <nav class="footer-nav">
+                <ul class="footer-menu">
+                    <li><a href="#" class="footer-link">Головна</a></li>
+                    <li><a href="#" class="footer-link">Про мене</a></li>
+                    <li><a href="#" class="footer-link">Послуги</a></li>
+                    <li><a href="#" class="footer-link">Проекти</a></li>
+                    <li><a href="#" class="footer-link">Відгуки</a></li>
+                    <li><a href="#" class="footer-link">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="footer-socials">
+                <a href="#" class="footer-social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer-social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 <span class="footer-brand-highlight">Mumair</span>. All Rights Reserved, Inc.</p>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
