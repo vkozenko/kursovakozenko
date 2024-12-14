@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Підрахунок суми чисел</title>
+</head>
+<body>
+    <!-- Поля для введення чисел -->
+    <input class="num" type="text" placeholder="Число">
+    <input class="num" type="text" placeholder="Число">
+    <input class="num" type="text" placeholder="Число">
+
+    <!-- Кнопка для виконання обчислення -->
+    <button id="task">Enter</button>
+
+    <!-- Місце для виведення результату -->
+    <p id="result"></p>
+
+    <script>
+        // Додаємо обробник події для кнопки
+        document.getElementById('task').addEventListener('click', function () {
+            // Отримуємо всі елементи <input> з класом .num
+            const inputs = document.querySelectorAll('.num');
+            let sum = 0;
+
+            // Перебираємо всі <input> і підсумовуємо їх значення
+            inputs.forEach(input => {
+                const value = parseFloat(input.value); // Перетворюємо текст у число
+                if (!isNaN(value)) { // Перевіряємо, чи це число
+                    sum += value;
+                }
+            });
+
+            // Виводимо результат у <p id="result">
+            document.getElementById('result').textContent = `Сума: ${sum}`;
+        });
+    </script>
+</body>
+</html>
+
+    
